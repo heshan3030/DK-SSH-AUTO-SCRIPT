@@ -24,13 +24,30 @@ echo -ne "Enter No. of Days till expiration : ";read nod
 exd=$(date +%F  -d "$nod days")
 useradd -e $exd -M -N -s /bin/false $username && echo "$username:$password" | chpasswd &&
 clear &&
-echo -e "${GREEN}User Detail" &&
-echo -e "${RED}-----------" &&
-echo -e "${GREEN}\nUsername :${YELLOW} $username" &&
-echo -e "${GREEN}\nPassword :${YELLOW} $password" &&
-echo -e "${GREEN}\nExpire Date :${YELLOW} $exd ${ENDCOLOR}" ||
+echo -e "${GREEN} ✅ SUCCESSFULLY CREATED ✅" &&
+echo -e "${RED}-----------------------------" &&
+echo -e "${GREEN}\n✅ IP ADDRESS :${YELLOW} $pub_ip" &&
+echo -e "${GREEN}\n✅ Username :${YELLOW} $username" &&
+echo -e "${GREEN}\n✅ Password :${YELLOW} $password" &&
+echo -e "${GREEN}\n✅ Expire Date :${YELLOW} $exd ${ENDCOLOR}" ||
 echo -e "${RED}\nFailed to add user $username please try again.${ENDCOLOR}"
-
+echo -e "\033[1;32m======================="
+echo -e "\033[1;32m=❌NO SPAM"
+echo -e "\033[1;32m=❌NO DDOS "
+echo -e "\033[1;32m=❌NO HACKING "
+echo -e "\033[1;32m=❌NO CARDING   "
+echo -e "\033[1;32m=❌NO TORRENT   "
+echo -e "\033[1;32m=❌NO OVER DOWNLOAD"
+echo -e "\033[1;32m=❌NO MULTILOGIN "
+echo -e "\033[1;32m======================="
+echo -e "\033[1;32m࿂ SSH •  22"
+echo -e "\033[1;32m࿂ SSL •  443"
+echo -e "\033[1;32m࿂ Squid  •  8080"
+echo -e "\033[1;32m࿂ Dropbear •  80"
+echo -e "\033[1;32m [-] ═───────◇───────═"
+echo -e "\033[1;32m࿂ Badvpn •  7300"
+echo -e "\033[1;32m [-] ═───────◇───────═"
+echo -e "\033[1;32m›☬[•] SCRIPTS ═◇ ⚡️⚡️  BY DATAKINGDOM  ⚡️⚡️ ◇═ [•]☬"
 #return to panel
 
 echo -e "\nPress Enter key to return to main menu"; read
