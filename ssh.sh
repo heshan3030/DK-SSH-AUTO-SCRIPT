@@ -181,23 +181,23 @@ wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/Li
 wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/RemoveScript.sh
 wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
 wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/menu
-mv ChangeUser.sh /etc/elhssh-v2/ChangeUser.sh
-mv ChangePorts.sh /etc/elhssh-v2/ChangePorts.sh
-mv UserManager.sh /etc/elhssh-v2/UserManager.sh
-mv Banner.sh /etc/elhssh-v2/Banner.sh
-mv DelUser.sh /etc/elhssh-v2/DelUser.sh
-mv ListUsers.sh /etc/elhssh-v2/ListUsers.sh
-mv RemoveScript.sh /etc/elhssh-v2/RemoveScript.sh
-mv speedtest-cli /etc/elhssh-v2/speedtest-cli
+mv ChangeUser.sh /etc/DK-SSH-AUTO-SCRIPT/ChangeUser.sh
+mv ChangePorts.sh /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
+mv UserManager.sh /etc/DK-SSH-AUTO-SCRIPT/UserManager.sh
+mv Banner.sh /etc/DK-SSH-AUTO-SCRIPT/Banner.sh
+mv DelUser.sh /etc/DK-SSH-AUTO-SCRIPT/DelUser.sh
+mv ListUsers.sh /etc/DK-SSH-AUTO-SCRIPT/ListUsers.sh
+mv RemoveScript.sh /etc/DK-SSH-AUTO-SCRIPT/RemoveScript.sh
+mv speedtest-cli /etc/DK-SSH-AUTO-SCRIPT/speedtest-cli
 mv menu /usr/local/bin/menu
-chmod +x /etc/elhssh-v2/ChangeUser.sh
-chmod +x /etc/elhssh-v2/ChangePorts.sh
-chmod +x /etc/elhssh-v2/UserManager.sh
-chmod +x /etc/elhssh-v2/Banner.sh
-chmod +x /etc/elhssh-v2/DelUser.sh
-chmod +x /etc/elhssh-v2/ListUsers.sh
-chmod +x /etc/elhssh-v2/RemoveScript.sh
-chmod +x /etc/elhssh-v2/speedtest-cli
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/ChangeUser.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT-v2/ChangePorts.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/UserManager.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/Banner.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/DelUser.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/ListUsers.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/RemoveScript.sh
+chmod +x /etc/DK-SSH-AUTO-SCRIPT/speedtest-cli
 chmod +x /usr/local/bin/menu
 }
 fun_service_start()
@@ -216,7 +216,7 @@ systemctl restart squid
 sudo systemctl enable udpgw
 sudo systemctl restart udpgw
 }
-echo -ne "${GREEN}Installing required packages ............."
+echo -ne "${GREEN}DK-SSH-AUTO-SCRIPT Installing required packages ............."
 pre_req >/dev/null 2>&1 &
 spinner
 echo -ne "\tdone"
@@ -228,11 +228,11 @@ echo -ne "\n${YELLOW}Compiling and installing Badvpn UDP Gateway ............."
 fun_udpgw >/dev/null 2>&1 &
 spinner
 echo -ne "\tdone"
-echo -ne "\n${CYAN}Installing Panel ............."
+echo -ne "\n${CYAN}DK-SSH-AUTO-SCRIPT Installing Panel ............."
 fun_panel >/dev/null 2>&1 &
 spinner
 echo -ne "\tdone"
-echo -ne "\n${RED}Starting All the services ............."
+echo -ne "\n${RED}DK-SSH-AUTO-SCRIPT Starting All the services ............."
 fun_service_start >/dev/null 2>&1 &
 spinner
 echo -ne "\tdone"
@@ -241,7 +241,29 @@ echo -e "${ENDCOLOR}"
 #configure user shell to /bin/false
 echo /bin/false >> /etc/shells
 clear
-
+echo -e "  \033[1;33m     • \033[1;32m████████ DK-SSH AUTO SCRIPT INSTALLATION COMPLETED ████████\033[1;33m • \033[0m"
+echo ""
+echo -e  "                     \033[1;31m    █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+                         █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
+                         █░░║║║╠─║─║─║║║║║╠─░░█
+                         █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
+                         █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ \033[0m" 
+echo -e " \033[1;31m═─────────────────────────────◇──◇──◇─────────────────────────────═
+\033[0m"
+echo -e "  \033[1;33m  ⭐️...☁️☁️🔸•DK-SSH PROJECT•🔸☁️☁️...\033[1;31m
+\033[1;36m    ⭐️...🔸🔹 NEW Version ; 1 🔸🔹...  \033[1;31m 
+\033[1;37m    ⭐️...🙏😘ThankYOU FOR SELECTING OUR SCRIPT🙏😘...
+             ⭐️...😷STAY SAFE😷...\033[0m"
+echo -e "\033[1;33m    ⭐️...⚠️THIS IS FREE AND NOT FOR SALE⚠️...\033[1;31m
+\033[1;36m    ⭐️...🛑VIOLATORS WILL BE REPORTED AND BANED🛑...\033[1;37m
+    ⭐️...🌍HAPPY BROWSING🌍... \033[0m"
+echo -e " \033[1;31m═─────────────────────────────◇──◇──◇─────────────────────────────═
+\033[0m"
+echo -e "\033[1;33m  📊 MORE INFORMATION CONTACT TELEGRAM \033[1;31m\033[1;36m
+  🌐TELEGRAM🌐\033[1;31m:\033[1;37m @Dk_king_offcial \033[0m"
+echo -e "\033[1;33m  📊 MORE INFORMATION CONTACT whatsapp \033[1;31m \033[1;36m
+  🌐whatsapp🌐\033[1;31m:\033[1;37m 0768100942\033[0m"
+echo -e " \033[1;31m═══════════════════════•ᴅᴀᴛᴀᴋɪɴɢᴅᴏᴍ ᴘʀᴏᴊᴇᴄᴛ•═══════════════════════\033[0m"
 #Adding the default user
 echo -ne "${GREEN}Enter the default username : "; read username
 while true; do
