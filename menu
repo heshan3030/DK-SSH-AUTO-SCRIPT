@@ -59,15 +59,15 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 echo -ne "${GREEN}\nSelect Operation : ${ENDCOLOR}" ;read n
 
 case $n in
-  1) /etc/elhssh-v2/UserManager.sh;;
-  2) /etc/elhssh-v2/ListUsers.sh;;
-  3) /etc/elhssh-v2/ChangeUser.sh;;
-  4) /etc/elhssh-v2/DelUser.sh;;
-  5) /etc/elhssh-v2/ChangePorts.sh;;
-  6) /etc/elhssh-v2/Banner.sh;;
+  1) /etc/DK-SSH-AUTO-SCRIPT/UserManager.sh;;
+  2) /etc/DK-SSH-AUTO-SCRIPT/ListUsers.sh;;
+  3) /etc/DK-SSH-AUTO-SCRIPT/ChangeUser.sh;;
+  4) /etc/DK-SSH-AUTO-SCRIPT/DelUser.sh;;
+  5) /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh;;
+  6) /etc/DK-SSH-AUTO-SCRIPT/Banner.sh;;
   7) clear && screenfetch -p || echo -e "${RED}Screenfetch not installed. please install${ENDCOLOR}"; echo -e "\nPress Enter to return back to the menu";read;menu;;  
-  8) clear && python3 /etc/elhssh-v2/speedtest-cli || echo -e "${RED}Python3 or speedtest-cli not installed. please install${ENDCOLOR}"; echo -e "\nPress Enter to return back to the menu";read;menu;;
-  9) /etc/elhssh-v2/RemoveScript.sh;;
+  8) clear && python3 /etc/DK-SSH-AUTO-SCRIPT/speedtest-cli || echo -e "${RED}Python3 or speedtest-cli not installed. please install${ENDCOLOR}"; echo -e "\nPress Enter to return back to the menu";read;menu;;
+  9) /etc/DK-SSH-AUTO-SCRIPT/RemoveScript.sh;;
   10) clear;exit;;
   *) echo -e "${RED}\nInvalid Option. Press Enter to return back to the menu${ENDCOLOR}";read && menu;;
 esac
