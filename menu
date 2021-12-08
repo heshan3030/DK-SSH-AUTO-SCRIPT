@@ -23,7 +23,7 @@ if ! [ $(id -u) = 0 ]; then
    echo -e "${RED}Plese run the command with root privilages!${ENDCOLOR}"
    exit 1
 fi
-
+ 
 clear
 
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
