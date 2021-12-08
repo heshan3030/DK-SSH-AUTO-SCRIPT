@@ -172,15 +172,15 @@ EOF
 fun_panel()
 {
 mkdir /etc/elhssh-v2
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/ChangeUser.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/ChangePorts.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/UserManager.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/Banner.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/DelUser.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/ListUsers.sh
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/etc/RemoveScript.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/ChangeUser.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/ChangePorts.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/UserManager.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/Banner.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/DelUser.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/ListUsers.sh
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/RemoveScript.sh
 wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-wget https://raw.githubusercontent.com/monoxofighter/elhssh-v2/main/menu
+wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/menu
 mv ChangeUser.sh /etc/elhssh-v2/ChangeUser.sh
 mv ChangePorts.sh /etc/elhssh-v2/ChangePorts.sh
 mv UserManager.sh /etc/elhssh-v2/UserManager.sh
