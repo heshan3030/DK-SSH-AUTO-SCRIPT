@@ -56,7 +56,7 @@ systemctl restart dropbear &&
 rm -f /etc/default/dropbear.cbackup &&
 echo -e "\n${GREEN}New Dropbear port is $new_db_port ${ENDCOLOR} " ||
 fail_db
-echo -e "\nPress Enter to return back" ;read && /etc/elhssh-v2/ChangePorts.sh
+echo -e "\nPress Enter to return back" ;read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
 }
 
 fail_db_ssl()
@@ -80,7 +80,7 @@ systemctl restart stunnel4 &&
 rm -f /etc/stunnel/stunnel.conf.cbackup &&
 echo -e "\n${GREEN}New Dropbear + SSL port is $new_db_ssl ${ENDCOLOR} " ||
 fail_db_ssl
-echo -e "\nPress Enter to return back" ;read && /etc/elhssh-v2/ChangePorts.sh
+echo -e "\nPress Enter to return back" ;read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
 }
 
 fail_op_ssl()
@@ -104,7 +104,7 @@ systemctl restart stunnel4 &&
 rm -f /etc/stunnel/stunnel.conf.cbackup &&
 echo -e "\n${GREEN}New Openssh + SSL port is $new_op_ssl ${ENDCOLOR} " ||
 fail_db_ssl
-echo -e "\nPress Enter to return back" ;read && /etc/elhssh-v2/ChangePorts.sh
+echo -e "\nPress Enter to return back" ;read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
 }
 
 fail_squid()
@@ -128,7 +128,7 @@ systemctl restart squid &&
 rm -f squid.conf.cbackup &&
 echo -e "\n${GREEN}New Squid port is $new_squid_port ${ENDCOLOR} " ||
 fail_squid
-echo -e "\nPress Enter to return back" ;read && /etc/elhssh-v2/ChangePorts.sh
+echo -e "\nPress Enter to return back" ;read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
 }
 
 fail_udpgw()
@@ -157,7 +157,7 @@ systemctl restart udpgw.service
 rm -f squid.conf.cbackup &&
 echo -e "\n${GREEN}New BadVPN UDPGW is $new_udpgw_port ${ENDCOLOR} " ||
 fail_udpgw
-echo -e "\nPress Enter to return back" ;read && /etc/elhssh-v2/ChangePorts.sh
+echo -e "\nPress Enter to return back" ;read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
 }
 
 case $n in
@@ -167,5 +167,5 @@ case $n in
   4)change_squid;;
   5)change_udpgw;;
   6)menu;;
-  *) echo -e "${RED}\nInvalid Option. Press Enter to return back to the menu${ENDCOLOR}";read && /etc/elhssh-v2/ChangePorts.sh;;
+  *) echo -e "${RED}\nInvalid Option. Press Enter to return back to the menu${ENDCOLOR}";read && /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh;;
 esac
