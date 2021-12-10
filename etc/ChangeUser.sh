@@ -26,9 +26,9 @@ chage -E $exd $username && echo "$username:$password" | chpasswd &&
 clear &&
 echo -e "${GREEN}User Detail" &&
 echo -e "${RED}-----------" &&
-echo -e "${GREEN}\nUsername :${YELLOW} $username" &&
-echo -e "${GREEN}\nPassword :${YELLOW} $password" &&
-echo -e "${GREEN}\nExpire Date :${YELLOW} $exd ${ENDCOLOR}" ||
+echo -e "${GREEN}\n📌Username :${YELLOW} $username" &&
+echo -e "${GREEN}\n📌Password :${YELLOW} $password" &&
+echo -e "${GREEN}\n📌Expire Date :${YELLOW} $exd ${ENDCOLOR}" ||
 echo -e "${RED}\nFailed to modify user $username please try again.${ENDCOLOR}"
 
 #return to panel
