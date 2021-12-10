@@ -181,23 +181,23 @@ wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/Li
 wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/etc/RemoveScript.sh
 wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
 wget https://raw.githubusercontent.com/heshan3030/DK-SSH-AUTO-SCRIPT/main/menu
-mv ChangeUser.sh /etc/DK-SSH-AUTO-SCRIPT/ChangeUser.sh
-mv ChangePorts.sh /etc/DK-SSH-AUTO-SCRIPT/ChangePorts.sh
-mv UserManager.sh /etc/DK-SSH-AUTO-SCRIPT/UserManager.sh
-mv Banner.sh /etc/DK-SSH-AUTO-SCRIPT/Banner.sh
-mv DelUser.sh /etc/DK-SSH-AUTO-SCRIPT/DelUser.sh
-mv ListUsers.sh /etc/DK-SSH-AUTO-SCRIPT/ListUsers.sh
-mv RemoveScript.sh /etc/DK-SSH-AUTO-SCRIPT/RemoveScript.sh
-mv speedtest-cli /etc/DK-SSH-AUTO-SCRIPT/speedtest-cli
+mv ChangeUser.sh /etc/elhssh-v2/ChangeUser.sh
+mv ChangePorts.sh /etc/elhssh-v2/ChangePorts.sh
+mv UserManager.sh /etc/elhssh-v2/UserManager.sh
+mv Banner.sh /etc/elhssh-v2/Banner.sh
+mv DelUser.sh /etc/elhssh-v2/DelUser.sh
+mv ListUsers.sh /etc/elhssh-v2/ListUsers.sh
+mv RemoveScript.sh /etc/elhssh-v2/RemoveScript.sh
+mv speedtest-cli /etc/elhssh-v2/speedtest-cli
 mv menu /usr/local/bin/menu
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/ChangeUser.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT-v2/ChangePorts.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/UserManager.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/Banner.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/DelUser.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/ListUsers.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/RemoveScript.sh
-chmod +x /etc/DK-SSH-AUTO-SCRIPT/speedtest-cli
+chmod +x /etc/elhssh-v2/ChangeUser.sh
+chmod +x /etc/elhssh-v2/ChangePorts.sh
+chmod +x /etc/elhssh-v2/UserManager.sh
+chmod +x /etc/elhssh-v2/Banner.sh
+chmod +x /etc/elhssh-v2/DelUser.sh
+chmod +x /etc/elhssh-v2/ListUsers.sh
+chmod +x /etc/elhssh-v2/RemoveScript.sh
+chmod +x /etc/elhssh-v2/speedtest-cli
 chmod +x /usr/local/bin/menu
 }
 fun_service_start()
@@ -278,11 +278,11 @@ echo -ne "Enter No. of Days till expiration : ";read nod
 exd=$(date +%F  -d "$nod days")
 useradd -e $exd -M -N -s /bin/false $username && echo "$username:$password" | chpasswd &&
 clear &&
-echo -e "${GREEN}Default User Details" &&
+echo -e "${GREEN}🛑Default User Details🛑" &&
 echo -e "${RED}--------------------" &&
-echo -e "${GREEN}\nUsername :${YELLOW} $username" &&
-echo -e "${GREEN}\nPassword :${YELLOW} $password" &&
-echo -e "${GREEN}\nExpire Date :${YELLOW} $exd ${ENDCOLOR}" ||
+echo -e "${GREEN}\n🛑Username :${YELLOW} $username" &&
+echo -e "${GREEN}\n🛑Password :${YELLOW} $password" &&
+echo -e "${GREEN}\n🛑Expire Date :${YELLOW} $exd ${ENDCOLOR}" ||
 echo -e "${RED}\nFailed to add default user $username please try again.${ENDCOLOR}"
 
 #exit script
