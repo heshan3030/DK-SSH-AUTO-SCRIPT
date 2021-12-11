@@ -27,13 +27,14 @@ echo -e "⚡️Squid port : $old_squid_port"
 echo -e "⚡️BadVPN UDP Gateway port : $old_udpgw_port\n"
 echo -e "${RED}-----------------------------------\n"
 echo -e "${CYAN}  1)📌Change Dropbear port"
-echo -e "  2)📌Change Dropear + SSL port"
+echo -e "  2)📌Change SSL port"
 echo -e "  3)📌Change Openssh + SSL port"
 echo -e "  4)📌Change Squid port"
 echo -e "  5)📌Change BadVPN UDPGW port"
 echo -e "  6)📌Return to main Menu"
+echo -e "${RED}-----------------------------------\n"
 
-echo -ne "${GREEN}\nSelect Operation : ${ENDCOLOR}" ;read n
+echo -ne "${GREEN}\◇ WHAT DO YOU WANT TO DO : ${ENDCOLOR}" ;read n
 
 fail_db()
 {
