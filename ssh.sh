@@ -79,11 +79,10 @@ EOF
 #Adding the banner
 
 cat << EOF > /etc/banner
-<p>♻️Paid Privet SSH ♻️<br />======================<br />🔰 ELH.NetwoxCloud&trade; 🔰<br />======================<br />❌NO SPAM<br />❌NO DDOS<br />❌NO HACKING<br />❌NO CARDING<br />❌NO TORRENT<br />❌NO OVER DOWNLOAD<br />❌NO MULTILOGIN<br />=======================<br />✅SSH : 22<br />✅SSL : 443<br />✅Squid : 8080<br />✅Dropbear : 80<br />✅BadVpn : 7300<br />=======================<br />&copy;2021 | ELH.Company&trade; <br />All Rights Reserved. <br />======================</p>
-EOF
+<strong>🛑 𝐃𝐊-𝐒𝐒𝐇-𝐒𝐂𝐑𝐈𝐏𝐓𝐒 🛑</strong> <h><fontcolor='blue'><html><body><center><h2><font color="#FF0000">⛅𝘗𝘈𝘐𝘋 𝘚𝘌𝘙𝘝𝘌𝘙⛅ </font></h2><br></center><font color="#ff8c00">: : ★ Happy Browsing!</font><br> <font color="#ffe100">: : ★ STRICTLY NO ACCOUNT SHARING</font><br> <font color="#d9ff00">: : ★ STRICTLY NO MULTI-LOGIN</font><br> <font color="#77ff00">: : ★ STRICTLY NO TORRENT<font><br><br><br><strong><p><strong><strong><span style="color: #ff0000; background-color:#c0c0c0;">💢•ᴅᴀᴛᴀᴋɪɴɢᴅᴏᴍ-ᴘʀᴏᴊᴇᴄᴛ•💢</span></strong></strong></p><h2><fontcolor="#339966"> 
+🌀𝘒𝘌𝘌𝘗𝘓𝘐𝘔𝘐𝘛 🌀 <br><br><center><br>====================================</body></html><br>EOF
 
 #Configuring stunnel
-
 mkdir /etc/stunnel
 cat << EOF > /etc/stunnel/stunnel.conf
 cert = /etc/stunnel/stunnel.pem
@@ -265,16 +264,16 @@ echo -e "\033[1;33m  📊 MORE INFORMATION CONTACT whatsapp \033[1;31m \033[1;36
   🌐whatsapp🌐\033[1;31m:\033[1;37m 0768100942\033[0m"
 echo -e " \033[1;31m═══════════════════════•ᴅᴀᴛᴀᴋɪɴɢᴅᴏᴍ ᴘʀᴏᴊᴇᴄᴛ•═══════════════════════\033[0m"
 #Adding the default user
-echo -ne "${GREEN}Enter the default username : "; read username
+echo -ne "${GREEN}🛑Enter the default username🛑 : "; read username
 while true; do
-    read -p "Do you want to genarate a random password ? (Y/N) " yn
+    read -p "Do you want to genarate a random password😁 ? (Y/N) " yn
     case $yn in
         [Yy]* ) password=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-9};echo;); break;;
         [Nn]* ) echo -ne "Enter password (please use a strong password) : "; read password; break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
-echo -ne "Enter No. of Days till expiration : ";read nod
+echo -ne "⚠️Enter No. of Days till expiration⚠️ : ";read nod
 exd=$(date +%F  -d "$nod days")
 useradd -e $exd -M -N -s /bin/false $username && echo "$username:$password" | chpasswd &&
 clear &&
