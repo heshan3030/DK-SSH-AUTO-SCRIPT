@@ -26,7 +26,7 @@ useradd -e $exd -M -N -s /bin/false $username && echo "$username:$password" | ch
 clear &&
 echo -e "${GREEN} ✅ SUCCESSFULLY CREATED ✅" &&
 echo -e "${RED}-----------------------------" &&
-echo -e "${GREEN}\n✅ IP ADDRESS :${YELLOW} $pub_ip" &&
+echo -e "${GREEN}\n✅ IP ADDRESS :${YELLOW}$pub_ip$pub_ip" &&
 echo -e "${GREEN}\n✅ Username :${YELLOW} $username" &&
 echo -e "${GREEN}\n✅ Password :${YELLOW} $password" &&
 echo -e "${GREEN}\n✅ Expire Date :${YELLOW} $exd ${ENDCOLOR}" ||
@@ -42,18 +42,18 @@ echo -e "\033[1;31m◈─────⪧ 🔕WARNING🔕 ⪦──────�
     echo -e "\033[1;32m◈⪧ 👮‍♀️ NO Illegal Activities "
     echo -e "\033[1;32m◈⪧ 😤 NO over Downloading s"
     echo ""
-echo -e "\033[1;32m======================="
+echo -e "\033[1;32m======================= "
 echo -e "\033[1;32m◈ SSH	  ⌁   22"
-echo -e "\033[1;32m◈ SSL	  ⌁  443/443"
-echo -e "\033[1;32m◈ Squid    ⌁  8080/80"
-echo -e "\033[1;32m◈ DropBear ⌁  80/7788"
+echo -e "\033[1;32m◈ SSL	  ⌁  443/443 "
+echo -e "\033[1;32m◈ Squid    ⌁  8080/80 "
+echo -e "\033[1;32m◈ DropBear ⌁  80/7788 "
 echo -e "\033[1;32m◈ BadVPN   ⌁  7300"
-echo -e "\033[1;32m [-] ═───────◇───────═"
-echo -e "\033[1;32m࿂ Badvpn •  7300"
-echo -e "\033[1;32m [-] ═───────◇───────═"
-echo -e "\033[1;32m======================="
+echo -e "\033[1;32m [-] ═───────◇───────═ "
+echo -e "\033[1;32m࿂ Badvpn •  7300 "
+echo -e "\033[1;32m [-] ═───────◇───────═ "
+echo -e "\033[1;32m======================= "
 
-echo -e "\033[1;32m›☬[•] SCRIPTS ═◇ ⚡️⚡️  BY DATAKINGDOM  ⚡️⚡️ ◇═ [•]☬"
+echo -e "\033[1;32m›☬[•] SCRIPTS ═◇ ⚡️⚡️  BY DATAKINGDOM  ⚡️⚡️ ◇═ [•]☬ "
 #return to panel
 
 echo -e "\nPress Enter key to return to main menu"; read
